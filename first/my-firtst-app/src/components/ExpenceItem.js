@@ -2,16 +2,12 @@ import "./ExpenseItem.css";
 import ExpenceCal from "./expenceCal";
 
 function ExpenceItem(props) {
-  const date = props.date;
-  const title = props.title;
-  const amount = props.amount;
-
   return (
     <div className="expense-item">
-      <ExpenceCal date={date}></ExpenceCal>
+      <ExpenceCal date={props.date}></ExpenceCal>
       <div className="expense-item__description">
-        <h2>{title}</h2>
-        <div className="expense-item__price">{amount}</div>
+        <h2>{props.title}</h2>
+        <div className="expense-item__price">{props.amount}</div>
       </div>
     </div>
   );
