@@ -1,4 +1,4 @@
-import "./expenceCal.css";
+import "./ExpenceCal.css";
 
 function ExpenceCal(props) {
   const month = props.date.toLocaleDateString("en-US", { month: "long" });
