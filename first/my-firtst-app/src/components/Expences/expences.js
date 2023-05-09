@@ -1,6 +1,6 @@
 import "./expences.css";
 import ExpenceItem from "./ExpenceItem";
-import Card from "./Card";
+import Card from "../UI/Card";
 
 function Expences(props) {
   const expencesList = props.data.map((exp) => {
