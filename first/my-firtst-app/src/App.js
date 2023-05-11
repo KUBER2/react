@@ -24,9 +24,15 @@ function App() {
     },
   ];
 
+  const addExpence = (expence) => {
+    console.log("Added expence:");
+    console.log(expence);
+    expenses.push(expence);
+  };
+
   return (
     <div>
-      <NewExpence></NewExpence>
+      <NewExpence addExpence={addExpence}></NewExpence>
       <Expences data={expenses}></Expences>
     </div>
   );
